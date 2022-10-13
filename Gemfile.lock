@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/heartcombo/simple_form.git
+  revision: 31fe25504771bd6cd425b585a4e0ed652fba4521
+  specs:
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -98,9 +106,6 @@ GEM
     io-console (0.5.11)
     irb (1.4.2)
       reline (>= 0.3.0)
-    jbuilder (2.11.5)
-      actionview (>= 5.0.0)
-      activesupport (>= 5.0.0)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -210,10 +215,10 @@ DEPENDENCIES
   capybara
   debug
   importmap-rails
-  jbuilder
   puma (~> 5.0)
   rails (~> 7.0.4)
   selenium-webdriver
+  simple_form!
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails

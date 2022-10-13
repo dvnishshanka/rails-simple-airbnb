@@ -1,0 +1,20 @@
+<div class="container">
+  <%= form_with model: @flat do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <br>
+   <%= f.label :description %>
+  <%= f.text_field :description %>
+  <br>
+    <%= f.label :number_of_guests %>
+  <%= f.number_field :number_of_guests %>
+  <br>
+  <%= f.label :price_per_night %>
+  <%= f.number_field :price_per_night %>
+  <br>
+  <%= f.submit %>
+<% end %>
+</div>
