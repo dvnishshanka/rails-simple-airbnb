@@ -1,7 +1,9 @@
 <div class="container">
 <h1>All our Flats (<%= @flats.length %>)</h1>
+<div class="flats d-flex  justify-content-between">
 <% @flats.each do |flat| %>
 <div class="flat-card">
+<img class="flat-image" src=<%=flat.image_url%>>
   <h3><%=flat.name%></h3>
   <p><%= flat.description %></p>
   <div class='d-flex '>
@@ -11,12 +13,14 @@
     <p class= "fs-4 flex-grow-1"><i class="fa-solid fa-euro-sign"></i>   <%=flat.price_per_night%>  </p>
 </div>
 <hr>
-<div class="d-flex">
+<div class="d-flex justify-content-between">
 <%= link_to "More Details", flat_path(flat) %>
+<%= link_to "Edit", edit_flat_path(flat) %>
 <%= link_to "Remove", flat_path(flat),
     data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
   %>
 </div>
   </div>
 <% end %>
+</div>
 </div>
